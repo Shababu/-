@@ -1,0 +1,410 @@
+/* сброс стилей браузера */
+* {
+  box-sizing: border-box; 
+}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	text-decoration: none;
+	color: white;
+	font-family: Arial;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol { 
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+
+/* ВЕРСТКА */
+/* ШАПКА */
+.upperBlock {
+	background-image: url(../imgs/bgPhoto.jpg);
+	background-size: cover;
+	height: 700px;
+}
+header, header > ul {
+	display: flex;
+	flex-flow: row nowrap;
+}
+header {
+	justify-content: space-between;
+	border-bottom: solid 1px grey;
+}
+header > a > img {
+	height: 60px;
+	width: 80px;
+	float: left;
+}
+header > a {
+	margin-left: 8%;
+}
+header > ul > li {
+	color: white;
+	font-size: 1.5em;
+	width: 160px;
+	text-align: center;
+}
+header li a:hover {
+	color: black;
+}
+header > ul {
+	align-items: center;
+	width: 80%;
+	justify-content: flex-end;
+}
+.SM_icon {
+	height: 30px;
+	width: 30px;
+	display: block;
+}
+.icon_li {
+	width: 50px;
+}
+.upperBlock > div {
+	text-align: center;
+	margin-top: 200px;
+}
+h1 {
+	font-size: 7em;
+	color: white;
+}
+.upperBlock p {
+	color: #11749e;
+	font-size: 2em;
+	letter-spacing: 0.14em;
+}
+.round {
+	border-radius: 100px;
+}
+.anchor {
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	margin: 0 auto;
+	border: 1px solid grey;
+	background: url(../imgs/downArrow2.png) 14px 19px no-repeat;
+}
+.upperBlock span {
+	display: block;
+	margin: 70px 0 10px 0;
+	font-size: 1.3em;
+}
+
+/* ВТОРОЙ БЛОК (СТАТЬИ) */
+
+.secondBlock {
+	background-color: #11749e;
+	height: 630px;
+}
+.alertBlock {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding-top: 50px;
+}
+.letter {
+	display: block;
+	text-align: center;
+	font-size: 10em;
+	font-weight: bold;
+	opacity: .2;
+}
+article span {
+	font-size: 1.2em;
+}
+.under_letter {
+	display: block;
+	position: absolute;
+	font-size: 2em;
+	top: 50%;
+}
+/* ВТОРОЙ БЛОК */
+.articlesBlock, .employeesBlock {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 95%;
+	margin: 0 auto;
+	justify-content: space-around;
+	max-width: 100%;
+}
+.articlesBlock > article, .employeesBlock > article {
+	width: 19%;
+	text-align: center;
+	margin: 5px;
+}
+.articlesBlock > article > div {
+	display: flex;
+	justify-content: center;
+}
+article > .round {
+	height: 130px;
+	width: 130px;
+	margin: 20px auto;
+	background-color: #2e85aa;
+}
+.pen {
+	background: url(../imgs/write.png) 45px 44px no-repeat;
+}
+.loop {
+	background: url(../imgs/loop.png)  45px 44px no-repeat;
+}
+.cloud {
+	background: url(../imgs/cloud.png)  45px 44px no-repeat;
+}
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 20px;
+}
+p {
+	font-size: 1.08em;
+}
+
+/* ТРЕТИЙ БЛОК*/
+.thirdBlock {
+	display: flex;
+	flex-flow: row wrap;
+}
+.thirdBlock div {
+	width: 50%;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+}
+.thirdBlock article {
+	width: 80%;
+}
+.thirdBlock div img {
+	max-width: 100%;
+	display: block;
+}
+.grey {
+	background-color: #222222;
+}
+.whiteBlock,
+.whiteBlock h3,
+.whiteBlock p {
+	background-color: #f3f3f3;
+	color: #222222;
+}
+.whiteBlock p,
+.whiteBlock h3,
+.grey p,
+.grey h3 {
+	font-size: 1.4em;
+}
+/* ЧЕТВЁРТЫЙ БЛОК */
+.forthBlock {
+	height: 840px;
+}
+.forthBlock p {
+	font-size: 1.5em;
+	color: #222222;
+	text-align: center;
+} 
+.blue {
+	display: block;
+	width: 100%;
+	color: #11749e;
+} 
+
+/* ПЯТЫЙ БЛОК */
+.fifthBlock {
+	display: flex;
+	color: black;
+	background-color: #11749e;
+	height: 250px;
+}
+.fifthBlock ul {
+	display: flex;
+	justify-content: space-around;
+	width: 85%;
+	margin: auto;
+	align-items: center;
+}
+.fifthBlock li {
+	background: url(../imgs/write.png) no-repeat 0 48%;
+	color: white;
+	font-size: 1.2em;
+	width: 40%;
+	padding-left: 90px;
+	background-size: 10%;
+}
+
+/* БЛОК С ТЕЛЕФОНОМ */
+
+.phoneBlock {
+	background-image: url('../imgs/secondBg.jpg');
+	background-size: cover;
+	height: 780px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.phoneBlock > div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 60%;
+}
+.phoneBlock > div > div {
+	width: 55%;
+}
+.phoneBlock p {
+	font-size: 1.5em;
+	line-height: 1.3em;
+}
+.phoneBlock span {
+	background-color: #11749e;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	padding-left: 20px;
+}
+.spanFlexer {
+	display: flex;
+	flex-flow: column wrap;
+	margin-top: 30px;
+}
+.shortSpan {
+	width: 80%;
+}
+.normalSpan {
+	width: 85%;
+}
+.longSpan {
+	width: 90%;
+}
+
+/* ШЕСТОЙ БЛОК */
+.employeesBlock > article > div {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.employeeName {
+	position: absolute;
+	top: 93%;
+	background-color: white;
+	width: 85%;
+	height: 50px;
+}
+.employeeName span {
+	font-weight: bold;
+	color: black;
+	display: block;
+}
+.employeeName h3 {
+	display: inline;
+	color: #11749e;
+}
+
+/* ФОРМА */
+.formBlock {
+	background-image: url(../imgs/formBG.jpg);
+	background-size: cover;
+}
+#yourProject {
+	width: 60%;
+	height: 450px;
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+	justify-content: space-between;
+}
+#yourProject input {
+	width: 32%;
+	height: 50px;
+	background-color: rgba(255, 255, 255, 0);
+}
+#yourProject textarea {
+	width: 100%;
+	margin-top: 40px;
+	background-color: rgba(255, 255, 255, 0);
+}
+#yourProject input,
+#yourProject textarea {
+	border: solid 1px white;
+	color: white;
+	border-radius: 3px;
+}
+#submit {
+	margin: 50px auto 0 auto;
+	background-color: #11749e;
+	width: 30%;
+	border: solid 1px white;
+	border-radius: 3px;
+	color: white;
+	font-weight: bold;
+	font-size: 1.3em;
+	height: 50px;
+}
+/* ОБЪЯВЛЕНИЕ НА БОЛЬШОЙ БУКВЕ */
+.white {
+	color: white;
+	font-weight: bold;
+}
+.black {
+	color: black;
+	font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+	height: 130px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #222222;
+}
+
+
+/* АДАПТИВ */
+@media (min-width: 768px) and (max-width: 1400px) {
+	header a { font-size: 0.7em; }
+	.SM_icon { height: 25px; width: 25px; }
+	h1 {font-size: 5em; }
+	.upperBlock { height: 655px; }
+	.upperBlock p {font-size: 1.43em;}
+	.upperBlock span {font-size: 1em;}
+	.letter {font-size: 7em;}
+	.under_letter {font-size: 1.5em; top:55%;}
+	article > .round {height: 90px; width: 90px; }
+	.pen, .loop, .cloud {background-position: 26px 26px;}
+	h3 {font-size: 1.2em;}
+	article span {font-size: 0.9em;}
+	.secondBlock {height: 500px;}
+	.grey h3, .grey p, .whiteBlock p, .whiteBlock h3 {font-size: 0.95em; line-height: 17px;}
+	.articlesBlock img, .employeesBlock img {transform: scale(0.7);}
+	.articlesBlock > article, .employeesBlock > article {width: 25%;}
+	.forthBlock p {font-size: 0.9em; padding: 0 20px;}
+	.forthBlock {height: 680px;}
+	.fifthBlock li {background-size: 7%; padding-left: 50px; font-size: .9em;}
+	.phoneBlock p {font-size: 1em;}
+	.smartPhone {transform: scale(0.7);}
+	.phoneBlock {height: 620px;}
+	.employeeName {top: 83%; width: 63%;}
+	.alertBlock {padding-top: 0;}
+	footer {height: 70px;}
+}
